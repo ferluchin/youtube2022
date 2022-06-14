@@ -11,20 +11,20 @@ const List = () => {
   const rows = [
     {
       id: 1143155,
-      product: "Acer Nitro 5",
+      product: "Innovación",
       img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
-      customer: "John Smith",
-      date: "1 March",
+      customer: "Luis Granda",
+      date: "1 Enero",
       amount: 785,
       method: "Cash on Delivery",
       status: "Approved",
     },
     {
       id: 2235235,
-      product: "Playstation 5",
+      product: "Proyecto Ascendere",
       img: "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
       customer: "Michael Doe",
-      date: "1 March",
+      date: "1 Febrero",
       amount: 900,
       method: "Online Payment",
       status: "Pending",
@@ -34,7 +34,7 @@ const List = () => {
       product: "Redragon S101",
       img: "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
       customer: "John Smith",
-      date: "1 March",
+      date: "1 Marzo",
       amount: 35,
       method: "Cash on Delivery",
       status: "Pending",
@@ -44,7 +44,7 @@ const List = () => {
       product: "Razer Blade 15",
       img: "https://m.media-amazon.com/images/I/71wF7YDIQkL._AC_UY327_FMwebp_QL65_.jpg",
       customer: "Jane Smith",
-      date: "1 March",
+      date: "1 Abril",
       amount: 920,
       method: "Online",
       status: "Approved",
@@ -54,7 +54,7 @@ const List = () => {
       product: "ASUS ROG Strix",
       img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
       customer: "Harold Carol",
-      date: "1 March",
+      date: "1 Mayo",
       amount: 2000,
       method: "Online",
       status: "Pending",
@@ -65,12 +65,12 @@ const List = () => {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell className="tableCell">Tracking ID</TableCell>
-            <TableCell className="tableCell">Product</TableCell>
-            <TableCell className="tableCell">Customer</TableCell>
-            <TableCell className="tableCell">Date</TableCell>
-            <TableCell className="tableCell">Amount</TableCell>
-            <TableCell className="tableCell">Payment Method</TableCell>
+            <TableCell className="tableCell">Identificador</TableCell>
+            <TableCell className="tableCell">Proyecto de Investigación</TableCell>
+            <TableCell className="tableCell">Docente</TableCell>
+            <TableCell className="tableCell">Fecha</TableCell>
+            <TableCell className="tableCell">Cantidad</TableCell>
+            {/* <TableCell className="tableCell">Payment Method</TableCell> */}
             <TableCell className="tableCell">Status</TableCell>
           </TableRow>
         </TableHead>
@@ -80,14 +80,14 @@ const List = () => {
               <TableCell className="tableCell">{row.id}</TableCell>
               <TableCell className="tableCell">
                 <div className="cellWrapper">
-                  <img src={row.img} alt="" className="image" />
+                  {/* <img src={row.img} alt="" className="image" /> */}
                   {row.product}
                 </div>
               </TableCell>
               <TableCell className="tableCell">{row.customer}</TableCell>
               <TableCell className="tableCell">{row.date}</TableCell>
               <TableCell className="tableCell">{row.amount}</TableCell>
-              <TableCell className="tableCell">{row.method}</TableCell>
+              {/* <TableCell className="tableCell">{row.method}</TableCell> */}
               <TableCell className="tableCell">
                 <span className={`status ${row.status}`}>{row.status}</span>
               </TableCell>
