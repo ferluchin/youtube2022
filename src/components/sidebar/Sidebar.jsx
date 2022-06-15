@@ -1,8 +1,8 @@
 import "./sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import CreditCardIcon from "@mui/icons-material/CreditCard";
+// import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+// import CreditCardIcon from "@mui/icons-material/CreditCard";
 import StoreIcon from "@mui/icons-material/Store";
 import InsertChartIcon from "@mui/icons-material/InsertChart";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
@@ -36,7 +36,7 @@ const Sidebar = () => {
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
-              <span>Users</span>
+              <span>Usuarios</span>
             </li>
           </Link>
           <Link to="/products" style={{ textDecoration: "none" }}>
@@ -45,27 +45,29 @@ const Sidebar = () => {
               <span>Products</span>
             </li>
           </Link>
-          <li>
+          {/* <li>
             <CreditCardIcon className="icon" />
             <span>Orders</span>
-          </li>
-          <li>
+          </li> */}
+
+          {/* <li>
             <LocalShippingIcon className="icon" />
             <span>Delivery</span>
-          </li>
-          <p className="title">USEFUL</p>
+          </li> */}
+
+          <p className="title">UTILIDADES</p>
           <li>
             <InsertChartIcon className="icon" />
-            <span>Stats</span>
+            <span>Estadísticas</span>
           </li>
           <li>
             <NotificationsNoneIcon className="icon" />
-            <span>Notifications</span>
+            <span>Notificationes</span>
           </li>
-          <p className="title">SERVICE</p>
+          <p className="title">SERVICIOS</p>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>System Health</span>
+            <span>Salud del sistema</span>
           </li>
           <li>
             <PsychologyOutlinedIcon className="icon" />
@@ -73,16 +75,16 @@ const Sidebar = () => {
           </li>
           <li>
             <SettingsApplicationsIcon className="icon" />
-            <span>Settings</span>
+            <span>Ajustes</span>
           </li>
           <p className="title">USER</p>
           <li>
             <AccountCircleOutlinedIcon className="icon" />
-            <span>Profile</span>
+            <span>Perfil</span>
           </li>
           <li>
             <ExitToAppIcon className="icon" />
-            <span>Logout</span>
+            <span>Cerrar Sesión</span>
           </li>
         </ul>
       </div>
